@@ -1,0 +1,6 @@
+@ProductInventory_API_Upskilling_HostAddress = http://localhost:5177
+
+GET {{ProductInventory_API_Upskilling_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

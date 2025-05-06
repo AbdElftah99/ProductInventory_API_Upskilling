@@ -1,0 +1,26 @@
+[
+  {
+    
+    "Name": "Italian Chicken Marinade",
+    "Description": "This Italian dressing chicken marinade is a super simple but delicious way to add flavor before grilling.",
+    "Price": 200,
+    "Stock": 10,
+    "OrderId": 1
+  },
+  {
+    
+    "Name": "Chicken Marsala",
+    "Description": "Chicken Marsala is an Italian-style recipe for tender pan-fried chicken breasts in a sweet Marsala wine and mushroom sauce. It's super quick and easy to make for a weeknight dinner AND sophisticated enough for company.",
+    "Price": 150,
+    "Stock": 12,
+    "OrderId": 1
+  },
+  {
+   
+    "Name": "Spaghetti Bolognese",
+    "Description": "Classic Italian pasta with a rich, meaty tomato sauce.",
+    "Price": 120,
+    "Stock": 20,
+    "OrderId": 2
+  }
+]
