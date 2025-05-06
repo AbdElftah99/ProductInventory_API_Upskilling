@@ -15,7 +15,7 @@ namespace Persentation
     [Route("api/[controller]")]
     public class ProductsController(IServiceManager serviceManager) : ControllerBase
     {
-        // Get Methods
+        // Get Methods s
         [HttpGet]
         public async Task<ActionResult<PaginatedResult<ProductResultDto>>> GetAllProducts([FromQuery] ProductSpecificationParameters specification)
             => Ok(await serviceManager.ProductService.GetAllProductsAsync(specification));
