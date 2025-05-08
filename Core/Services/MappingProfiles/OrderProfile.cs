@@ -15,6 +15,10 @@ namespace Services.MappingProfiles
         {
             CreateMap<Order, OrderResultDto>()
                 .ReverseMap();
+
+            // For creating a new order using product IDs
+            CreateMap<CreateOrderDto, Order>()
+                .ForMember(dest => dest.Products, opt => opt.Ignore()); // We'll assign products manually
         }
     }
 }

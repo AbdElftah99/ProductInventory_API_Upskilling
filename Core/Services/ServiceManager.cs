@@ -12,7 +12,11 @@ namespace Services
     public class ServiceManager(IUnitOfWork _unitOfWork,
                                 IMapper _mapper) : IServiceManager
     {
-        private readonly Lazy<IProductService> _productService = new(() => new ProductService(_unitOfWork, _mapper));
-        public IProductService ProductService => _productService.Value;
+        private readonly Lazy<IProductService> _productService  = new(() => new ProductService(_unitOfWork, _mapper));
+        private readonly Lazy<IOrderService> _orderService      = new(() => new OrderService(_unitOfWork, _mapper));
+
+        public IProductService ProductService   => _productService.Value;
+        public IOrderService OrderService       => _orderService.Value;
+
     }
 }

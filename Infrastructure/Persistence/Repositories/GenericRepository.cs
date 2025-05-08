@@ -27,7 +27,5 @@ namespace Persistence.Repositories
 
         public void Delete(TEntity entity) => context.Set<TEntity>().Remove(entity);
         public void Update(TEntity entity) => context.Set<TEntity>().Update(entity);
-
-
     }
 }

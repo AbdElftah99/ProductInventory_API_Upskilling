@@ -13,6 +13,7 @@ namespace Services.Specification
     {
         public OrderSpecification(int id) : base(p => p.Id == id)
         {
+            AddInclude(o => o.Products);
         }
         public OrderSpecification(OrderSpecificationParameters specs)
             : base
